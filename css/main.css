@@ -256,14 +256,13 @@ section.hero .down-arrow path {
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  align-self: self-start;
-  margin-left: 10rem;
+  margin-left: 0;
+  margin-right: 0;
   background: rgb(218, 17, 17);
   border: none;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
-  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -276,14 +275,14 @@ section.hero .down-arrow path {
   font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  border-bottom: 3px solid black;
 }
 #footer ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 3rem;
   margin: 3rem 0;
+  font-weight: 200;
 }
 #footer ul li a {
   color: #fff;
@@ -296,6 +295,21 @@ section.hero .down-arrow path {
   }
   .feature {
     gap: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #footer .title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #footer ul {
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+  }
+  #footer ul li a {
+    color: #fff;
   }
 }
 @keyframes introLoad {
